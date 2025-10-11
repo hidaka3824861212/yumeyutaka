@@ -1,6 +1,6 @@
 # Claude1page
 
-Claude Code を使って、シンプルで、モダンで、美しい、ワンページで完結するWebページを作るためのスターターキットです。Netlifyで簡単に公開できるように設計されています。
+Claude Code を使って、シンプルで、モダンで、美しい、ワンページで完結するWebページを作るためのスターターキットです。Cloudflare Pagesで簡単に公開できるように設計されています。
 
 ## 必要なもの
 
@@ -103,12 +103,36 @@ webpage-template-for-cc/
 └── README.md          # このファイル
 ```
 
-## Netlifyでの公開
+## Cloudflare Pagesでの公開
 
-1. Netlifyにログイン
-2. 「New site from Git」を選択
-3. このリポジトリを選択
-4. Publish directory を `public` に設定
-5. Deploy
+### 方法1: Cloudflare Pagesダッシュボードから（推奨）
+
+1. [Cloudflare Dashboard](https://dash.cloudflare.com/) にログイン
+2. 「Workers & Pages」→「Create application」→「Pages」→「Connect to Git」を選択
+3. GitHubアカウントを連携
+4. このリポジトリを選択
+5. ビルド設定:
+   - **Build command**: (空欄でOK)
+   - **Build output directory**: `public`
+6. 「Save and Deploy」をクリック
+
+### 方法2: Wrangler CLI を使う
+
+```bash
+# Wrangler のインストール（初回のみ）
+npm install -g wrangler
+
+# Cloudflareにログイン
+wrangler login
+
+# デプロイ
+wrangler pages deploy public --project-name=shst
+```
+
+### カスタムドメインの設定
+
+1. Cloudflare Pages ダッシュボードでプロジェクトを開く
+2. 「Custom domains」タブを選択
+3. ドメインを追加して設定
 
 これで、あなたの美しいワンページWebサイトが公開されます！

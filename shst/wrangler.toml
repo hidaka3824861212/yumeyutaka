@@ -1,0 +1,16 @@
+name = "shst"
+compatibility_date = "2024-01-01"
+
+# Cloudflare Pages の設定
+[site]
+bucket = "./public"
+
+# ビルド設定（オプション）
+# Cloudflare Pages のダッシュボードで設定することも可能
+[build]
+command = ""
+cwd = ""
+
+# 環境変数（必要に応じて追加）
+[vars]
+# ENVIRONMENT = "production"
