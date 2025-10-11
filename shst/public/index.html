@@ -227,8 +227,15 @@
         <div class="container mx-auto px-4 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- ロゴ -->
-                <a href="#hero" class="flex items-center py-2">
-                    <img src="assets/images/shst001.jpg" alt="下塚田ふるさと応援隊" class="h-10 w-auto object-contain rounded-lg shadow-sm">
+                <a href="#hero" class="flex items-center py-2 space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-yellow-500">
+                        <path d="M12 2a10 10 0 0 0-10 10c0 5.523 4.477 10 10 10s10-4.477 10-10S17.523 2 12 2z"/>
+                        <path d="M8 12h8"/>
+                        <circle cx="9" cy="9" r="1"/>
+                        <circle cx="15" cy="9" r="1"/>
+                        <path d="M12 2v4"/>
+                    </svg>
+                    <span class="font-bold text-lg nav-text-color">下塚田ふるさと応援隊</span>
                 </a>
 
                 <!-- デスクトップメニュー -->
@@ -236,7 +243,7 @@
                     <a href="#about" class="nav-link text-gray-800 hover:text-primary-600 transition-colors">組織概要</a>
                     <a href="#vision" class="nav-link text-gray-800 hover:text-primary-600 transition-colors">ビジョン</a>
                     <a href="#activities" class="nav-link text-gray-800 hover:text-primary-600 transition-colors">活動内容</a>
-                    <a href="#features" class="nav-link text-gray-800 hover:text-primary-600 transition-colors">私たちの特徴</a>
+                    <a href="#features" class="nav-link text-gray-800 hover:text-primary-600 transition-colors">私たちの持ち味</a>
                     <a href="#results" class="nav-link text-gray-800 hover:text-primary-600 transition-colors">活動実績</a>
                     <button onclick="openModal('contact-modal')" class="nav-link bg-accent-500 hover:bg-accent-600 text-white px-6 py-2 rounded-full transition-colors">お問い合わせ</button>
                 </div>
@@ -262,7 +269,7 @@
                 <a href="#about" class="block py-2 text-gray-800 hover:text-primary-600">組織概要</a>
                 <a href="#vision" class="block py-2 text-gray-800 hover:text-primary-600">ビジョン</a>
                 <a href="#activities" class="block py-2 text-gray-800 hover:text-primary-600">活動内容</a>
-                <a href="#features" class="block py-2 text-gray-800 hover:text-primary-600">私たちの特徴</a>
+                <a href="#features" class="block py-2 text-gray-800 hover:text-primary-600">私たちの持ち味</a>
                 <a href="#results" class="block py-2 text-gray-800 hover:text-primary-600">活動実績</a>
                 <button onclick="openModal('contact-modal')" class="block w-full py-2 text-white bg-accent-500 hover:bg-accent-600 rounded-lg text-center">お問い合わせ</button>
             </div>
@@ -369,8 +376,8 @@
                     </div>
 
                     <!-- 組織概要ボタン -->
-                    <div class="mt-6">
-                        <a href="assets/documents/overview01.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl">
+                    <div class="mt-6 text-center">
+                        <a href="assets/documents/overview01.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-white/70 text-primary-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-600 hover:text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3">
                                 <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                                 <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
@@ -413,7 +420,7 @@
                         </p>
                         <!-- ビジョンボタン -->
                         <div class="mt-6">
-                            <a href="assets/documents/vision01.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl">
+                            <a href="assets/documents/vision01.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-white/70 text-primary-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-600 hover:text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3">
                                     <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
@@ -601,7 +608,7 @@
     <section id="features" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 inline-block border-b-4 border-accent-500 pb-2">私たちの特徴</h2>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 inline-block border-b-4 border-accent-500 pb-2">私たちの持ち味</h2>
             </div>
 
             <div class="max-w-6xl mx-auto">
@@ -617,7 +624,7 @@
                     <div data-aos="fade-left">
                         <h3 class="text-3xl font-bold text-gray-900 mb-6">多様性とダイバーシティ</h3>
                         <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                            私たちは多様な担い手（性別・年齢・国籍）が多様な担い方を認め合う組織づくりを重視しています。
+                            私たちは、多様な担い手（性別・年齢・国籍）が多様な担い方ができることを認め合う組織づくりを実践しています。
                         </p>
                         <p class="text-lg text-gray-700 mb-6 leading-relaxed">
                             自治会、婦人会、老人会、消防団、PTAなどの既存組織メンバーに加え、これまで地域活動に関わってこなかった若い世代や女性、UIターン者などの移住者も幅広く参画しています。
@@ -712,7 +719,7 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-2 mt-1">
                                                 <polyline points="20 6 9 17 4 12"></polyline>
                                             </svg>
-                                            <span>地域由来12名のメンバーでスタート</span>
+                                            <span>地域由来の12名で活動開始</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -785,6 +792,12 @@
                                     </svg>
                                     <span>省力化実証試験の開始</span>
                                 </li>
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-600 flex-shrink-0 mr-2 mt-1">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>地域内通信環境整備に向けた調査及び実証試験の実施</span>
+                                </li>
                             </ul>
                         </div>
                             </div>
@@ -812,31 +825,37 @@
                                     <span class="inline-block bg-primary-600 text-white px-4 py-2 rounded-full text-sm font-bold">2025年度（令和7年度）</span>
                                 </div>
                                 <div class="ml-16 md:ml-0 bg-primary-50 p-6 rounded-lg">
-                                    <h4 class="text-xl font-bold text-gray-900 mb-3">活動の拡大と深化</h4>
+                                    <h4 class="text-xl font-bold text-gray-900 mb-3">活動の拡大と深化（最終年度・実走に向けて）</h4>
                             <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-start">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-2 mt-1">
                                         <polyline points="20 6 9 17 4 12"></polyline>
                                     </svg>
-                                    <span>隊員18名体制での活動継続（実質17名）</span>
+                                    <span>会員18名とサポーター会員で活動を継続</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-2 mt-1">
                                         <polyline points="20 6 9 17 4 12"></polyline>
                                     </svg>
-                                    <span>マイヤーレモンのモニター配布開始</span>
+                                    <span>日南レモンの販売促進プレイベントの開催</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-2 mt-1">
                                         <polyline points="20 6 9 17 4 12"></polyline>
                                     </svg>
-                                    <span>農村RMO県内情報交換交流会の開催</span>
+                                    <span>３小学校区を跨いだ世代間交流のコスモス祭りの開催</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-2 mt-1">
                                         <polyline points="20 6 9 17 4 12"></polyline>
                                     </svg>
-                                    <span>ひなた宮崎農村地域活性化シンポジウムへの参加</span>
+                                    <span>地域資源の販売目的の田んぼのあぜ道軽トラ市in下塚田を開催</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-2 mt-1">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>地域内農地及び付帯施設の保全活動の実施（年４回）</span>
                                 </li>
                             </ul>
                         </div>
@@ -856,13 +875,20 @@
             </div>
 
             <!-- 地域の概要ボタン -->
-            <div class="text-center mb-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="text-center mb-12 flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="100">
                 <a href="assets/documents/region-overview01.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-accent-600 hover:bg-accent-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3">
                         <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
                         <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                     </svg>
                     地域の概要
+                </a>
+                <a href="https://nichinanlemon.jp/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-yellow-300 hover:bg-yellow-400 text-gray-900 px-8 py-4 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-xl">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3">
+                        <ellipse cx="12" cy="13" rx="6" ry="8" transform="rotate(-10 12 13)"/>
+                        <path d="M12 5c0 0 1-2 3-2s2 1 2 2"/>
+                    </svg>
+                    日南レモン
                 </a>
             </div>
 
@@ -1047,7 +1073,7 @@
 
         <div class="relative z-10 container mx-auto px-4 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4 inline-block border-b-4 border-white pb-2">お問い合わせ</h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 inline-block border-b-4 border-primary-400 pb-2 text-primary-600">お問い合わせ</h2>
             </div>
 
             <div class="max-w-4xl mx-auto">
@@ -1058,7 +1084,7 @@
                     </p>
 
                     <div class="text-center">
-                        <a href="https://shst.site/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-white text-primary-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl">
+                        <a href="https://shst.site/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-white/70 text-primary-700 px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-600 hover:text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-3">
                                 <circle cx="12" cy="12" r="10"></circle>
                                 <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -1080,7 +1106,7 @@
                                 <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                             </svg>
                         </div>
-                        <div class="bg-white text-primary-700 px-6 py-3 rounded-full font-bold text-lg mb-3 group-hover:bg-gray-100 transition-all shadow-lg">
+                        <div class="bg-white/70 text-primary-700 px-6 py-3 rounded-full font-bold text-lg mb-3 group-hover:bg-primary-600 group-hover:text-white group-hover:scale-105 transition-all duration-300 shadow-lg">
                             組織への参画
                         </div>
                         <p class="text-sm text-white/80 mb-2">一緒に地域を盛り上げませんか</p>
@@ -1093,7 +1119,7 @@
                                 <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                             </svg>
                         </div>
-                        <div class="bg-white text-accent-700 px-6 py-3 rounded-full font-bold text-lg mb-3 group-hover:bg-gray-100 transition-all shadow-lg">
+                        <div class="bg-white/70 text-primary-700 px-6 py-3 rounded-full font-bold text-lg mb-3 group-hover:bg-primary-600 group-hover:text-white group-hover:scale-105 transition-all duration-300 shadow-lg">
                             ボランティア
                         </div>
                         <p class="text-sm text-white/80 mb-2">活動のお手伝いをお願いします</p>
@@ -1107,7 +1133,7 @@
                                 <circle cx="12" cy="12" r="3"></circle>
                             </svg>
                         </div>
-                        <div class="bg-white text-primary-700 px-6 py-3 rounded-full font-bold text-lg mb-3 group-hover:bg-gray-100 transition-all shadow-lg">
+                        <div class="bg-white/70 text-primary-700 px-6 py-3 rounded-full font-bold text-lg mb-3 group-hover:bg-primary-600 group-hover:text-white group-hover:scale-105 transition-all duration-300 shadow-lg">
                             視察・取材
                         </div>
                         <p class="text-sm text-white/80 mb-2">活動の見学や取材を受け付けます</p>
@@ -1121,7 +1147,7 @@
     <!-- Footer -->
     <footer class="bg-white text-gray-700 py-12 border-t border-gray-200">
         <div class="container mx-auto px-4 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
                 <!-- 組織情報 -->
                 <div>
                     <img src="assets/images/shst001.jpg" alt="下塚田ふるさと応援隊" class="h-12 w-auto object-contain rounded-lg shadow-sm mb-4">
@@ -1140,7 +1166,7 @@
                         <li><a href="#about" class="text-sm text-gray-600 hover:text-primary-600 transition-colors">組織概要</a></li>
                         <li><a href="#vision" class="text-sm text-gray-600 hover:text-primary-600 transition-colors">ビジョン</a></li>
                         <li><a href="#activities" class="text-sm text-gray-600 hover:text-primary-600 transition-colors">活動内容</a></li>
-                        <li><a href="#features" class="text-sm text-gray-600 hover:text-primary-600 transition-colors">私たちの特徴</a></li>
+                        <li><a href="#features" class="text-sm text-gray-600 hover:text-primary-600 transition-colors">私たちの持ち味</a></li>
                         <li><a href="#results" class="text-sm text-gray-600 hover:text-primary-600 transition-colors">活動実績</a></li>
                     </ul>
                 </div>
@@ -1156,9 +1182,21 @@
                         </svg>
                         https://shst.site/
                     </a>
+                    <a href="mailto:shst@yumeyutaka.com" class="flex items-center text-sm text-gray-600 hover:text-primary-600 transition-colors mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                        shst@yumeyutaka.com
+                    </a>
                     <p class="text-sm text-gray-600">
                         活動記録、ブログ、お知らせ等を随時更新しております
                     </p>
+                </div>
+
+                <!-- 画像 -->
+                <div class="flex items-center justify-center">
+                    <img src="assets/images/shst007.png" alt="下塚田の風景" class="w-40 h-auto object-contain rounded-lg shadow-lg" loading="lazy" decoding="async">
                 </div>
             </div>
 
