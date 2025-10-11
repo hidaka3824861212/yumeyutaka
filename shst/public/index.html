@@ -107,7 +107,7 @@
 
         /* iOS-style event button */
         .ios-button {
-            background: linear-gradient(135deg, #f97316 0%, #ea580c 50%, #fb923c 100%);
+            background: #f97316;
             border-radius: 12px;
             padding: 12px 24px;
             color: white;
@@ -119,8 +119,7 @@
 
         .ios-button:hover {
             transform: translateY(-2px);
-            background: white;
-            color: #ea580c;
+            background: #ea580c;
             box-shadow: 0 10px 25px rgba(234, 88, 12, 0.3);
             animation: none;
         }
@@ -239,7 +238,7 @@
                     <a href="#activities" class="nav-link text-gray-800 hover:text-primary-600 transition-colors">活動内容</a>
                     <a href="#features" class="nav-link text-gray-800 hover:text-primary-600 transition-colors">私たちの特徴</a>
                     <a href="#results" class="nav-link text-gray-800 hover:text-primary-600 transition-colors">活動実績</a>
-                    <a href="#contact" class="nav-link bg-accent-500 hover:bg-accent-600 text-white px-6 py-2 rounded-full transition-colors">お問い合わせ</a>
+                    <button onclick="openModal('contact-modal')" class="nav-link bg-accent-500 hover:bg-accent-600 text-white px-6 py-2 rounded-full transition-colors">お問い合わせ</button>
                 </div>
 
                 <!-- モバイルメニューボタン -->
@@ -265,7 +264,7 @@
                 <a href="#activities" class="block py-2 text-gray-800 hover:text-primary-600">活動内容</a>
                 <a href="#features" class="block py-2 text-gray-800 hover:text-primary-600">私たちの特徴</a>
                 <a href="#results" class="block py-2 text-gray-800 hover:text-primary-600">活動実績</a>
-                <a href="#contact" class="block py-2 text-white bg-accent-500 hover:bg-accent-600 rounded-lg text-center">お問い合わせ</a>
+                <button onclick="openModal('contact-modal')" class="block w-full py-2 text-white bg-accent-500 hover:bg-accent-600 rounded-lg text-center">お問い合わせ</button>
             </div>
         </div>
     </nav>
@@ -294,20 +293,20 @@
                 共感・共生・共同の理念のもと、持続可能な地域社会を目指します
             </p>
 
-            <!-- 期間限定イベント告知 -->
-            <div class="mb-8 animate__animated animate__fadeIn animate__delay-2s">
-                <a href="https://nichinanlemon.jp/event-konne" target="_blank" rel="noopener noreferrer" class="inline-block ios-button text-lg">
+            <!-- イベント告知 -->
+            <div class="flex flex-col gap-4 mb-8 animate__animated animate__fadeIn animate__delay-2s max-w-4xl mx-auto">
+                <a href="https://nichinanlemon.jp/event-konne" target="_blank" rel="noopener noreferrer" class="block ios-button text-lg">
                     🍋 期間限定イベント｜新宿KONNE館で日南レモン試食・販売会 10/25(土)・26(日)
                 </a>
-            </div>
-
-            <div class="flex flex-col sm:flex-row gap-4 justify-center animate__animated animate__fadeInUp animate__delay-2s">
-                <a href="#about" class="bg-white text-primary-700 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl">
-                    私たちについて
-                </a>
-                <button onclick="openModal('contact-modal')" class="bg-accent-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-accent-600 transition-all shadow-lg hover:shadow-xl">
-                    お問い合わせ
-                </button>
+                <div class="block px-8 py-4 bg-lime-500/90 backdrop-blur-sm text-white rounded-2xl font-semibold text-center shadow-lg text-lg">
+                    📢 お知らせ｜日南レモンオンラインショップ開店 10月17日（金）
+                </div>
+                <div class="block px-8 py-4 bg-white/20 backdrop-blur-md text-white rounded-full font-semibold text-center shadow-lg text-lg border-2 border-white/30">
+                    🌸 季節限定イベント｜下塚田コスモス祭り 11月9日（日）
+                </div>
+                <div class="block px-8 py-4 bg-white/20 backdrop-blur-md text-white rounded-full font-semibold text-center shadow-lg text-lg border-2 border-white/30">
+                    🚜 年末限定イベント｜田んぼのあぜ道軽トラ市in下塚田 12月21日（日）
+                </div>
             </div>
         </div>
 
@@ -1119,6 +1118,62 @@
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="bg-white text-gray-700 py-12 border-t border-gray-200">
+        <div class="container mx-auto px-4 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- 組織情報 -->
+                <div>
+                    <img src="assets/images/shst001.jpg" alt="下塚田ふるさと応援隊" class="h-12 w-auto object-contain rounded-lg shadow-sm mb-4">
+                    <p class="text-sm mb-4 text-center text-gray-700">
+                        農村RMO形成支援事業に取り組んでいます！
+                    </p>
+                    <p class="text-lg font-semibold italic text-center text-gray-800">
+                        "I'm always here for you"
+                    </p>
+                </div>
+
+                <!-- リンク -->
+                <div>
+                    <h5 class="text-gray-900 font-bold text-lg mb-4">リンク</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-sm text-gray-600 hover:text-primary-600 transition-colors">組織概要</a></li>
+                        <li><a href="#vision" class="text-sm text-gray-600 hover:text-primary-600 transition-colors">ビジョン</a></li>
+                        <li><a href="#activities" class="text-sm text-gray-600 hover:text-primary-600 transition-colors">活動内容</a></li>
+                        <li><a href="#features" class="text-sm text-gray-600 hover:text-primary-600 transition-colors">私たちの特徴</a></li>
+                        <li><a href="#results" class="text-sm text-gray-600 hover:text-primary-600 transition-colors">活動実績</a></li>
+                    </ul>
+                </div>
+
+                <!-- 外部リンク -->
+                <div>
+                    <h5 class="text-gray-900 font-bold text-lg mb-4">公式サイト</h5>
+                    <a href="https://shst.site/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm text-gray-600 hover:text-primary-600 transition-colors mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                        https://shst.site/
+                    </a>
+                    <p class="text-sm text-gray-600">
+                        活動記録、ブログ、お知らせ等を随時更新しております
+                    </p>
+                </div>
+            </div>
+
+            <!-- コピーライト -->
+            <div class="border-t border-gray-200 pt-8 text-center">
+                <p class="text-sm text-gray-700">
+                    &copy; 2020-2025 下塚田ふるさと応援隊 All rights reserved.
+                </p>
+                <p class="text-xs mt-2 text-gray-500">
+                    「豊かな」暮らし、「夢ある」ふる里を目指して
+                </p>
+            </div>
+        </div>
+    </footer>
+
     <!-- モーダル：組織への参画 -->
     <div id="join-modal" class="modal">
         <div class="modal-content">
@@ -1297,62 +1352,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12">
-        <div class="container mx-auto px-4 lg:px-8">
-            <div class="grid md:grid-cols-3 gap-8 mb-8">
-                <!-- 組織情報 -->
-                <div>
-                    <img src="assets/images/shst001.jpg" alt="下塚田ふるさと応援隊" class="h-12 w-auto object-contain rounded-lg shadow-sm mb-4">
-                    <p class="text-sm mb-4 text-center">
-                        農村RMO形成支援事業に取り組んでいます！
-                    </p>
-                    <p class="text-lg font-semibold italic text-center">
-                        "I'm always here for you"
-                    </p>
-                </div>
-
-                <!-- リンク -->
-                <div>
-                    <h5 class="text-white font-bold text-lg mb-4">リンク</h5>
-                    <ul class="space-y-2">
-                        <li><a href="#about" class="text-sm hover:text-white transition-colors">組織概要</a></li>
-                        <li><a href="#vision" class="text-sm hover:text-white transition-colors">ビジョン</a></li>
-                        <li><a href="#activities" class="text-sm hover:text-white transition-colors">活動内容</a></li>
-                        <li><a href="#features" class="text-sm hover:text-white transition-colors">私たちの特徴</a></li>
-                        <li><a href="#results" class="text-sm hover:text-white transition-colors">活動実績</a></li>
-                    </ul>
-                </div>
-
-                <!-- 外部リンク -->
-                <div>
-                    <h5 class="text-white font-bold text-lg mb-4">公式サイト</h5>
-                    <a href="https://shst.site/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm hover:text-white transition-colors mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                        https://shst.site/
-                    </a>
-                    <p class="text-sm">
-                        活動記録、ブログ、お知らせ等を随時更新しております
-                    </p>
-                </div>
-            </div>
-
-            <!-- コピーライト -->
-            <div class="border-t border-gray-800 pt-8 text-center">
-                <p class="text-sm">
-                    &copy; 2020-2025 下塚田ふるさと応援隊 All rights reserved.
-                </p>
-                <p class="text-xs mt-2 text-gray-500">
-                    「豊かな」暮らし、「夢ある」ふる里を目指して
-                </p>
-            </div>
-        </div>
-    </footer>
-
     <!-- Scroll to Top Button -->
     <button id="scroll-to-top" class="bg-primary-600 hover:bg-primary-700 text-white rounded-full p-4 shadow-xl" aria-label="ページトップへ戻る">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1422,8 +1421,8 @@
             closeIcon.classList.toggle('hidden');
         });
 
-        // モバイルメニューのリンクをクリックしたら閉じる
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        // モバイルメニューのリンクとボタンをクリックしたら閉じる
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a, button');
         mobileMenuLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
