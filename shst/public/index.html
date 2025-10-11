@@ -82,11 +82,14 @@
 
         /* Sticky navigation with blur effect */
         .nav-transparent {
-            background-color: transparent;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
         }
 
         .nav-scrolled {
-            background-color: rgba(255, 255, 255, 0.7);
+            background-color: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
@@ -94,12 +97,49 @@
 
         /* Hero gradient overlay */
         .hero-overlay {
-            background: linear-gradient(135deg, rgba(22, 163, 74, 0.85) 0%, rgba(21, 128, 61, 0.75) 100%);
+            background: linear-gradient(135deg, rgba(22, 163, 74, 0.4) 0%, rgba(21, 128, 61, 0.3) 100%);
         }
 
         /* Section spacing */
         section {
             scroll-margin-top: 80px;
+        }
+
+        /* iOS-style event button */
+        .ios-button {
+            background: linear-gradient(135deg, #f97316 0%, #ea580c 50%, #fb923c 100%);
+            border-radius: 12px;
+            padding: 12px 24px;
+            color: white;
+            font-weight: 600;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            animation: pulse-blink 1.5s ease-in-out infinite;
+        }
+
+        .ios-button:hover {
+            transform: translateY(-2px);
+            background: white;
+            color: #ea580c;
+            box-shadow: 0 10px 25px rgba(234, 88, 12, 0.3);
+            animation: none;
+        }
+
+        .ios-button:active {
+            transform: translateY(0);
+        }
+
+        @keyframes pulse-blink {
+            0%, 100% {
+                opacity: 1;
+                box-shadow: 0 4px 15px rgba(249, 115, 22, 0.5);
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.85;
+                box-shadow: 0 4px 30px rgba(249, 115, 22, 0.9);
+                transform: scale(1.02);
+            }
         }
     </style>
 </head>
@@ -110,28 +150,22 @@
         <div class="container mx-auto px-4 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 <!-- ロゴ -->
-                <a href="#hero" class="flex items-center space-x-2 text-white font-bold text-xl">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
-                        <path d="M2 17l10 5 10-5"></path>
-                        <path d="M2 12l10 5 10-5"></path>
-                    </svg>
-                    <span class="hidden sm:inline">下塚田ふるさと応援隊</span>
-                    <span class="sm:hidden">応援隊</span>
+                <a href="#hero" class="flex items-center py-2">
+                    <img src="assets/images/shst001.jpg" alt="下塚田ふるさと応援隊" class="h-10 w-auto object-contain rounded-lg shadow-sm">
                 </a>
 
                 <!-- デスクトップメニュー -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="nav-link text-white hover:text-accent-300 transition-colors">組織概要</a>
-                    <a href="#vision" class="nav-link text-white hover:text-accent-300 transition-colors">ビジョン</a>
-                    <a href="#activities" class="nav-link text-white hover:text-accent-300 transition-colors">活動内容</a>
-                    <a href="#features" class="nav-link text-white hover:text-accent-300 transition-colors">私たちの特徴</a>
-                    <a href="#results" class="nav-link text-white hover:text-accent-300 transition-colors">活動実績</a>
+                    <a href="#about" class="nav-link text-gray-800 hover:text-primary-600 transition-colors">組織概要</a>
+                    <a href="#vision" class="nav-link text-gray-800 hover:text-primary-600 transition-colors">ビジョン</a>
+                    <a href="#activities" class="nav-link text-gray-800 hover:text-primary-600 transition-colors">活動内容</a>
+                    <a href="#features" class="nav-link text-gray-800 hover:text-primary-600 transition-colors">私たちの特徴</a>
+                    <a href="#results" class="nav-link text-gray-800 hover:text-primary-600 transition-colors">活動実績</a>
                     <a href="#contact" class="nav-link bg-accent-500 hover:bg-accent-600 text-white px-6 py-2 rounded-full transition-colors">お問い合わせ</a>
                 </div>
 
                 <!-- モバイルメニューボタン -->
-                <button id="mobile-menu-btn" class="md:hidden text-white p-2">
+                <button id="mobile-menu-btn" class="md:hidden text-gray-800 p-2">
                     <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="3" y1="12" x2="21" y2="12"></line>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -172,15 +206,23 @@
         <!-- コンテンツ -->
         <div class="relative z-10 container mx-auto px-4 text-center text-white">
             <h1 class="text-5xl md:text-7xl font-bold mb-6 animate__animated animate__fadeInDown">
-                豊かな暮らし、<br>夢あるふる里
+                豊かな暮らし<br>夢あるふる里
             </h1>
             <p class="text-xl md:text-2xl mb-8 animate__animated animate__fadeInUp animate__delay-1s font-light">
                 下塚田ふるさと応援隊
             </p>
-            <p class="text-lg md:text-xl mb-12 max-w-3xl mx-auto animate__animated animate__fadeIn animate__delay-2s">
+            <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto animate__animated animate__fadeIn animate__delay-2s">
                 宮崎県日南市の下塚田地区を拠点に、<br class="hidden sm:inline">
                 共感・共生・共同の理念のもと、持続可能な地域社会を目指します
             </p>
+
+            <!-- 期間限定イベント告知 -->
+            <div class="mb-8 animate__animated animate__fadeIn animate__delay-2s">
+                <a href="https://nichinanlemon.jp/" target="_blank" rel="noopener noreferrer" class="inline-block ios-button text-lg">
+                    🍋 期間限定イベント｜新宿KONNE館で日南レモン試食・販売会 10/25(土)・26(日)
+                </a>
+            </div>
+
             <div class="flex flex-col sm:flex-row gap-4 justify-center animate__animated animate__fadeInUp animate__delay-2s">
                 <a href="#about" class="bg-white text-primary-700 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl">
                     私たちについて
@@ -536,47 +578,73 @@
 
                     <!-- 2020年度 -->
                     <div class="mb-12 relative" data-aos="fade-up">
-                        <div class="flex items-center mb-4">
-                            <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-primary-600 rounded-full transform -translate-x-1/2 z-10"></div>
-                            <div class="ml-16 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
-                                <span class="inline-block bg-primary-600 text-white px-4 py-2 rounded-full text-sm font-bold">2020年度</span>
+                        <div class="md:flex md:items-start">
+                            <!-- 左側：画像（デスクトップのみ表示） -->
+                            <div class="hidden md:block md:w-1/2 md:pr-12">
+                                <img src="assets/images/shst002.jpg"
+                                     alt="設立総会の様子"
+                                     class="rounded-lg shadow-xl w-full h-auto object-cover"
+                                     loading="lazy"
+                                     decoding="async">
                             </div>
-                        </div>
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:ml-auto md:pl-12 bg-primary-50 p-6 rounded-lg">
-                            <h4 class="text-xl font-bold text-gray-900 mb-3">組織設立</h4>
-                            <ul class="space-y-2 text-gray-700">
-                                <li class="flex items-start">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-2 mt-1">
-                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                    </svg>
-                                    <span>4月4日 設立総会開催、組織正式発足</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-2 mt-1">
-                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                    </svg>
-                                    <span>7月4日 公式ウェブサイト開設</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-2 mt-1">
-                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                    </svg>
-                                    <span>地域由来12名のメンバーでスタート</span>
-                                </li>
-                            </ul>
+
+                            <!-- 中央のドット -->
+                            <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-primary-600 rounded-full transform -translate-x-1/2 z-10" style="top: 24px;"></div>
+
+                            <!-- 右側：年度とコンテンツ -->
+                            <div class="md:w-1/2 md:pl-12">
+                                <div class="ml-16 md:ml-0 mb-4 md:text-left">
+                                    <span class="inline-block bg-primary-600 text-white px-4 py-2 rounded-full text-sm font-bold">2020年度</span>
+                                </div>
+                                <div class="ml-16 md:ml-0 bg-primary-50 p-6 rounded-lg">
+                                    <h4 class="text-xl font-bold text-gray-900 mb-3">組織設立</h4>
+                                    <ul class="space-y-2 text-gray-700">
+                                        <li class="flex items-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-2 mt-1">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span>4月4日 設立総会開催、組織正式発足</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-2 mt-1">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span>7月4日 公式ウェブサイト開設</span>
+                                        </li>
+                                        <li class="flex items-start">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-2 mt-1">
+                                                <polyline points="20 6 9 17 4 12"></polyline>
+                                            </svg>
+                                            <span>地域由来12名のメンバーでスタート</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- 2024年度 -->
                     <div class="mb-12 relative" data-aos="fade-up">
-                        <div class="flex items-center mb-4">
-                            <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-accent-600 rounded-full transform -translate-x-1/2 z-10"></div>
-                            <div class="ml-16 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
-                                <span class="inline-block bg-accent-600 text-white px-4 py-2 rounded-full text-sm font-bold">2024年度（令和6年度）</span>
+                        <div class="md:flex md:items-start md:flex-row-reverse">
+                            <!-- 右側：画像（デスクトップのみ表示） -->
+                            <div class="hidden md:block md:w-1/2 md:pl-12">
+                                <img src="assets/images/shst003.jpg"
+                                     alt="活動の様子"
+                                     class="rounded-lg shadow-xl w-full h-auto object-cover"
+                                     loading="lazy"
+                                     decoding="async">
                             </div>
-                        </div>
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:ml-auto md:pl-12 bg-accent-50 p-6 rounded-lg">
-                            <h4 class="text-xl font-bold text-gray-900 mb-3">本格的な活動開始</h4>
+
+                            <!-- 中央のドット -->
+                            <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-accent-600 rounded-full transform -translate-x-1/2 z-10" style="top: 24px;"></div>
+
+                            <!-- 左側：年度とコンテンツ -->
+                            <div class="md:w-1/2 md:pr-12">
+                                <div class="ml-16 md:ml-0 mb-4 md:text-right">
+                                    <span class="inline-block bg-accent-600 text-white px-4 py-2 rounded-full text-sm font-bold">2024年度（令和6年度）</span>
+                                </div>
+                                <div class="ml-16 md:ml-0 bg-accent-50 p-6 rounded-lg">
+                                    <h4 class="text-xl font-bold text-gray-900 mb-3">本格的な活動開始</h4>
                             <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-start">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-600 flex-shrink-0 mr-2 mt-1">
@@ -588,7 +656,19 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-600 flex-shrink-0 mr-2 mt-1">
                                         <polyline points="20 6 9 17 4 12"></polyline>
                                     </svg>
+                                    <span>地域課題を踏まえたビジョンの策定</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-600 flex-shrink-0 mr-2 mt-1">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
                                     <span>年間20回以上の研修・交流活動を実施</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-600 flex-shrink-0 mr-2 mt-1">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                    <span>ビジョン達成のための集中講座実施</span>
                                 </li>
                                 <li class="flex items-start">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-600 flex-shrink-0 mr-2 mt-1">
@@ -610,18 +690,32 @@
                                 </li>
                             </ul>
                         </div>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- 2025年度 -->
                     <div class="mb-12 relative" data-aos="fade-up">
-                        <div class="flex items-center mb-4">
-                            <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-primary-600 rounded-full transform -translate-x-1/2 z-10"></div>
-                            <div class="ml-16 md:ml-0 md:w-1/2 md:pr-12 md:text-right">
-                                <span class="inline-block bg-primary-600 text-white px-4 py-2 rounded-full text-sm font-bold">2025年度（令和7年度）</span>
+                        <div class="md:flex md:items-start">
+                            <!-- 左側：画像（デスクトップのみ表示） -->
+                            <div class="hidden md:block md:w-1/2 md:pr-12">
+                                <img src="assets/images/shst004.png"
+                                     alt="活動の拡大と深化"
+                                     class="rounded-lg shadow-xl w-full h-auto object-cover"
+                                     loading="lazy"
+                                     decoding="async">
                             </div>
-                        </div>
-                        <div class="ml-16 md:ml-0 md:w-1/2 md:ml-auto md:pl-12 bg-primary-50 p-6 rounded-lg">
-                            <h4 class="text-xl font-bold text-gray-900 mb-3">活動の拡大と深化</h4>
+
+                            <!-- 中央のドット -->
+                            <div class="absolute left-8 md:left-1/2 w-4 h-4 bg-primary-600 rounded-full transform -translate-x-1/2 z-10" style="top: 24px;"></div>
+
+                            <!-- 右側：年度とコンテンツ -->
+                            <div class="md:w-1/2 md:pl-12">
+                                <div class="ml-16 md:ml-0 mb-4 md:text-left">
+                                    <span class="inline-block bg-primary-600 text-white px-4 py-2 rounded-full text-sm font-bold">2025年度（令和7年度）</span>
+                                </div>
+                                <div class="ml-16 md:ml-0 bg-primary-50 p-6 rounded-lg">
+                                    <h4 class="text-xl font-bold text-gray-900 mb-3">活動の拡大と深化</h4>
                             <ul class="space-y-2 text-gray-700">
                                 <li class="flex items-start">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-2 mt-1">
@@ -648,6 +742,8 @@
                                     <span>ひなた宮崎農村地域活性化シンポジウムへの参加</span>
                                 </li>
                             </ul>
+                        </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -977,27 +1073,9 @@
             if (currentScroll > 50) {
                 navbar.classList.remove('nav-transparent');
                 navbar.classList.add('nav-scrolled');
-                // ナビリンクの色を変更
-                navLinks.forEach(link => {
-                    if (!link.classList.contains('bg-accent-500')) {
-                        link.classList.remove('text-white');
-                        link.classList.add('text-gray-900');
-                        link.classList.remove('hover:text-accent-300');
-                        link.classList.add('hover:text-primary-600');
-                    }
-                });
             } else {
                 navbar.classList.add('nav-transparent');
                 navbar.classList.remove('nav-scrolled');
-                // ナビリンクの色を元に戻す
-                navLinks.forEach(link => {
-                    if (!link.classList.contains('bg-accent-500')) {
-                        link.classList.add('text-white');
-                        link.classList.remove('text-gray-900');
-                        link.classList.add('hover:text-accent-300');
-                        link.classList.remove('hover:text-primary-600');
-                    }
-                });
             }
 
             lastScroll = currentScroll;
