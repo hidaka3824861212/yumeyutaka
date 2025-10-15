@@ -348,28 +348,49 @@
                     <div class="bg-primary-50 p-6 rounded-lg mb-6">
                         <h4 class="text-xl font-bold text-primary-800 mb-4">基本理念「3C」</h4>
                         <ul class="space-y-3">
-                            <li class="flex items-start">
+                            <li class="flex items-start group">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-3 mt-1">
                                     <polyline points="20 6 9 17 4 12"></polyline>
                                 </svg>
-                                <div>
-                                    <strong class="text-primary-900">共感 (Compassion)</strong> - 共に感じること
+                                <div class="flex-1">
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            <strong class="text-primary-900">共感 (Compassion)</strong> - 共に感じること
+                                        </div>
+                                        <button onclick="openModal('compassion-modal')" class="ml-4 text-primary-600 hover:text-primary-700 text-sm font-semibold whitespace-nowrap">
+                                            詳しく見る →
+                                        </button>
+                                    </div>
                                 </div>
                             </li>
-                            <li class="flex items-start">
+                            <li class="flex items-start group">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-3 mt-1">
                                     <polyline points="20 6 9 17 4 12"></polyline>
                                 </svg>
-                                <div>
-                                    <strong class="text-primary-900">共生 (Cohabitation)</strong> - 共に生きること
+                                <div class="flex-1">
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            <strong class="text-primary-900">共生 (Cohabitation)</strong> - 共に生きること
+                                        </div>
+                                        <button onclick="openModal('cohabitation-modal')" class="ml-4 text-primary-600 hover:text-primary-700 text-sm font-semibold whitespace-nowrap">
+                                            詳しく見る →
+                                        </button>
+                                    </div>
                                 </div>
                             </li>
-                            <li class="flex items-start">
+                            <li class="flex items-start group">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 flex-shrink-0 mr-3 mt-1">
                                     <polyline points="20 6 9 17 4 12"></polyline>
                                 </svg>
-                                <div>
-                                    <strong class="text-primary-900">共同 (Collaboration)</strong> - 共に活動すること
+                                <div class="flex-1">
+                                    <div class="flex items-center justify-between">
+                                        <div>
+                                            <strong class="text-primary-900">共同 (Collaboration)</strong> - 共に活動すること
+                                        </div>
+                                        <button onclick="openModal('collaboration-modal')" class="ml-4 text-primary-600 hover:text-primary-700 text-sm font-semibold whitespace-nowrap">
+                                            詳しく見る →
+                                        </button>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -416,7 +437,7 @@
                         </p>
                         <p class="text-lg text-gray-700 mb-6">
                             人々が安心して、日々の豊かな暮らしが途切れることなく続く未来<br>
-                            というウェルビーイングの実現を目指しています
+                            というウェルビーイング（個人や社会のよい状態）の実現を目指しています
                         </p>
                         <!-- ビジョンボタン -->
                         <div class="mt-6">
@@ -444,17 +465,17 @@
                     <!-- 3つの柱 -->
                     <div class="grid md:grid-cols-3 gap-6 mb-8">
                         <div class="bg-primary-50 p-6 rounded-lg text-center" data-aos="flip-left" data-aos-delay="100">
-                            <div class="inline-block bg-primary-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4">1</div>
+                            <div class="bg-primary-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4 mx-auto">1</div>
                             <h4 class="font-bold text-gray-900 mb-2">農用地保全</h4>
                             <p class="text-sm text-gray-700">持続可能な農業の実現に向けた取組</p>
                         </div>
                         <div class="bg-accent-50 p-6 rounded-lg text-center" data-aos="flip-left" data-aos-delay="200">
-                            <div class="inline-block bg-accent-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4">2</div>
+                            <div class="bg-accent-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4 mx-auto">2</div>
                             <h4 class="font-bold text-gray-900 mb-2">地域資源の活用</h4>
                             <p class="text-sm text-gray-700">マイヤーレモンなど地域特産品の活用推進</p>
                         </div>
                         <div class="bg-primary-50 p-6 rounded-lg text-center" data-aos="flip-left" data-aos-delay="300">
-                            <div class="inline-block bg-primary-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4">3</div>
+                            <div class="bg-primary-600 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl font-bold mb-4 mx-auto">3</div>
                             <h4 class="font-bold text-gray-900 mb-2">生活支援</h4>
                             <p class="text-sm text-gray-700">地域住民の暮らしを支える仕組みづくり</p>
                         </div>
@@ -647,16 +668,56 @@
                         <p class="text-lg text-gray-700 mb-6 leading-relaxed">
                             多様な担い手による多様なアイデアや経験を活かすことで、イノベーションが生まれやすい組織環境を実現しています。
                         </p>
-                        <div class="flex flex-wrap gap-3">
-                            <span class="bg-primary-100 text-primary-800 px-4 py-2 rounded-full text-sm font-medium">若い世代</span>
-                            <span class="bg-primary-100 text-primary-800 px-4 py-2 rounded-full text-sm font-medium">女性</span>
-                            <span class="bg-primary-100 text-primary-800 px-4 py-2 rounded-full text-sm font-medium">UIターン者</span>
-                            <span class="bg-primary-100 text-primary-800 px-4 py-2 rounded-full text-sm font-medium">外国人</span>
-                            <span class="bg-primary-100 text-primary-800 px-4 py-2 rounded-full text-sm font-medium">高齢者</span>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <button onclick="openModal('young-generation-modal')" class="inline-flex items-center justify-center bg-white/70 text-primary-700 px-6 py-3 rounded-full font-bold text-base hover:bg-primary-600 hover:text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                </svg>
+                                若い世代
+                            </button>
+                            <button onclick="openModal('women-modal')" class="inline-flex items-center justify-center bg-white/70 text-primary-700 px-6 py-3 rounded-full font-bold text-base hover:bg-primary-600 hover:text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                                    <circle cx="9" cy="9" r="4"></circle>
+                                    <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path>
+                                </svg>
+                                女性
+                            </button>
+                            <button onclick="openModal('ui-turn-modal')" class="inline-flex items-center justify-center bg-white/70 text-primary-700 px-6 py-3 rounded-full font-bold text-base hover:bg-primary-600 hover:text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                                </svg>
+                                UIターン者
+                            </button>
+                            <button onclick="openModal('foreign-modal')" class="inline-flex items-center justify-center bg-white/70 text-primary-700 px-6 py-3 rounded-full font-bold text-base hover:bg-primary-600 hover:text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                </svg>
+                                外国人
+                            </button>
+                            <button onclick="openModal('elderly-modal')" class="inline-flex items-center justify-center bg-white/70 text-primary-700 px-6 py-3 rounded-full font-bold text-base hover:bg-primary-600 hover:text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="8.5" cy="7" r="4"></circle>
+                                    <polyline points="17 11 19 13 23 9"></polyline>
+                                </svg>
+                                高齢者
+                            </button>
+                            <button onclick="openModal('challenged-modal')" class="inline-flex items-center justify-center bg-white/70 text-primary-700 px-6 py-3 rounded-full font-bold text-base hover:bg-primary-600 hover:text-white hover:scale-105 hover:-translate-y-1 transition-all duration-300 shadow-lg hover:shadow-2xl">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+                                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="12" cy="7" r="4"></circle>
+                                    <path d="M12 14c-3.5 0-6.5 1.5-8 3.5"></path>
+                                </svg>
+                                チャレンジド
+                            </button>
                         </div>
                     </div>
                     <div data-aos="fade-left" class="order-1 md:order-2">
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+                        <img src="assets/images/shst008.jpg"
                              alt="手を重ねるチームワーク"
                              class="rounded-lg shadow-xl w-full h-auto"
                              loading="lazy"
@@ -911,9 +972,16 @@
                         <p class="text-gray-700 mb-4 leading-relaxed">
                             毎年春、下塚田の田んぼに色鮮やかなこいのぼりが泳ぎます。田園風景と青空に映えるこいのぼりは、地域の風物詩として親しまれています。
                         </p>
-                        <p class="text-gray-700 leading-relaxed">
+                        <p class="text-gray-700 mb-6 leading-relaxed">
                             地域コミュニティの絆を深め、訪れる人々に癒しと感動を与える、下塚田ならではの魅力的な景観です。
                         </p>
+                        <button onclick="openModal('koinobori-modal')" class="text-primary-600 hover:text-primary-700 font-semibold flex items-center group">
+                            詳しくはこちら
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 group-hover:translate-x-1 transition-transform">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
                     </div>
                 </div>
 
@@ -935,9 +1003,16 @@
                         <p class="text-gray-700 mb-4 leading-relaxed">
                             下塚田地区の特産品であるマイヤーレモン。当組織では長期（約6ヶ月間）の貯蔵試験を実施し、品質保持と通年供給の可能性を探っています。
                         </p>
-                        <p class="text-gray-700 leading-relaxed">
+                        <p class="text-gray-700 mb-6 leading-relaxed">
                             日南レモンとして東京などでの販売促進活動も展開し、地域資源の価値創造に取り組んでいます。
                         </p>
+                        <button onclick="openModal('lemon-modal')" class="text-primary-600 hover:text-primary-700 font-semibold flex items-center group">
+                            詳しくはこちら
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 group-hover:translate-x-1 transition-transform">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -953,107 +1028,150 @@
 
             <div class="max-w-4xl mx-auto">
                 <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-8 md:p-12 mb-12" data-aos="fade-up">
-                    <p class="text-xl md:text-2xl text-center text-gray-800 mb-8 leading-relaxed font-medium">
-                        「人々が安心して、日々の豊かな暮らしが<br class="hidden sm:inline">途切れることなく続く未来」の実現に向けて
-                    </p>
+                    <div class="flex items-start justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 mr-3 mt-1 flex-shrink-0">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed">
+                            私たちは「共感・共生・共同」の理念のもと、地域住民が主体となって多様な人々をつなぐ地域づくりに取り組みます。
+                        </p>
+                    </div>
+                    <div class="flex items-start justify-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 mr-3 mt-1 flex-shrink-0">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed">
+                            農業振興、地域資源の活用、生活支援の３つの柱を軸に、持続可能な事業展開と新たな担い手の育成に取り組みます。
+                        </p>
+                    </div>
+                    <div class="flex items-start justify-center mb-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600 mr-3 mt-1 flex-shrink-0">
+                            <path d="M12 2v20M2 12h20"></path>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        <p class="text-base md:text-lg text-gray-800 leading-relaxed">
+                            豊かで笑顔あふれる「ゆめゆたかのさと」を、次の世代へ確実につないでいくことを目指します。
+                        </p>
+                    </div>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-white border-2 border-primary-200 rounded-xl p-6 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="100">
-                        <div class="flex items-start">
-                            <div class="bg-primary-100 rounded-full p-3 mr-4 flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600">
-                                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900 mb-2">農村RMOモデルの確立</h4>
-                                <p class="text-sm text-gray-700">他地域への横展開を見据えたモデル構築</p>
+                    <button onclick="openModal('rmo-modal')" class="bg-white border-2 border-primary-200 rounded-xl p-6 hover:shadow-lg transition-all cursor-pointer group w-full text-left" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-start">
+                                <div class="bg-primary-100 rounded-full p-3 mr-4 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600">
+                                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                                        <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                        <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-2">農村RMOモデルの確立</h4>
+                                    <p class="text-sm text-gray-700 mb-2">他地域への横展開を見据えたモデル構築</p>
+                                    <p class="text-xs text-primary-600 group-hover:underline">クリックして詳細を見る →</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </button>
 
-                    <div class="bg-white border-2 border-accent-200 rounded-xl p-6 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="200">
-                        <div class="flex items-start">
-                            <div class="bg-accent-100 rounded-full p-3 mr-4 flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-600">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900 mb-2">新たな収益事業の創出</h4>
-                                <p class="text-sm text-gray-700">地域資源を活用した持続可能な事業展開</p>
+                    <button onclick="openModal('revenue-modal')" class="bg-white border-2 border-accent-200 rounded-xl p-6 hover:shadow-lg transition-all cursor-pointer group w-full text-left" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-start">
+                                <div class="bg-accent-100 rounded-full p-3 mr-4 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-600">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-2">新たな収益事業の創出</h4>
+                                    <p class="text-sm text-gray-700 mb-2">地域資源を活用した持続可能な事業展開</p>
+                                    <p class="text-xs text-accent-600 group-hover:underline">クリックして詳細を見る →</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </button>
 
-                    <div class="bg-white border-2 border-primary-200 rounded-xl p-6 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="300">
-                        <div class="flex items-start">
-                            <div class="bg-primary-100 rounded-full p-3 mr-4 flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600">
-                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900 mb-2">スマート農業技術の導入</h4>
-                                <p class="text-sm text-gray-700">生産性向上と作業効率化の推進</p>
+                    <button onclick="openModal('smart-agriculture-modal')" class="bg-white border-2 border-primary-200 rounded-xl p-6 hover:shadow-lg transition-all cursor-pointer group w-full text-left" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-start">
+                                <div class="bg-primary-100 rounded-full p-3 mr-4 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600">
+                                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-2">スマート農業技術の導入</h4>
+                                    <p class="text-sm text-gray-700 mb-2">生産性向上と作業効率化の推進</p>
+                                    <p class="text-xs text-primary-600 group-hover:underline">クリックして詳細を見る →</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </button>
 
-                    <div class="bg-white border-2 border-accent-200 rounded-xl p-6 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="400">
-                        <div class="flex items-start">
-                            <div class="bg-accent-100 rounded-full p-3 mr-4 flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-600">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900 mb-2">新たな担い手の確保と育成</h4>
-                                <p class="text-sm text-gray-700">若者・女性・移住者などの参画促進</p>
+                    <button onclick="openModal('successors-modal')" class="bg-white border-2 border-accent-200 rounded-xl p-6 hover:shadow-lg transition-all cursor-pointer group w-full text-left" data-aos="fade-up" data-aos-delay="400">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-start">
+                                <div class="bg-accent-100 rounded-full p-3 mr-4 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-600">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-2">新たな担い手の確保と育成</h4>
+                                    <p class="text-sm text-gray-700 mb-2">若者・女性・移住者などの参画促進</p>
+                                    <p class="text-xs text-accent-600 group-hover:underline">クリックして詳細を見る →</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </button>
 
-                    <div class="bg-white border-2 border-primary-200 rounded-xl p-6 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="500">
-                        <div class="flex items-start">
-                            <div class="bg-primary-100 rounded-full p-3 mr-4 flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600">
-                                    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
-                                    <line x1="4" y1="22" x2="4" y2="15"></line>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900 mb-2">地域の魅力発信</h4>
-                                <p class="text-sm text-gray-700">関係人口の創出と交流の深化</p>
+                    <button onclick="openModal('promotion-modal')" class="bg-white border-2 border-primary-200 rounded-xl p-6 hover:shadow-lg transition-all cursor-pointer group w-full text-left" data-aos="fade-up" data-aos-delay="500">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-start">
+                                <div class="bg-primary-100 rounded-full p-3 mr-4 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-600">
+                                        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                                        <line x1="4" y1="22" x2="4" y2="15"></line>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-2">地域の魅力発信</h4>
+                                    <p class="text-sm text-gray-700 mb-2">関係人口の創出と交流の深化</p>
+                                    <p class="text-xs text-primary-600 group-hover:underline">クリックして詳細を見る →</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </button>
 
-                    <div class="bg-white border-2 border-accent-200 rounded-xl p-6 hover:shadow-lg transition-all" data-aos="fade-up" data-aos-delay="600">
-                        <div class="flex items-start">
-                            <div class="bg-accent-100 rounded-full p-3 mr-4 flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-600">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                                    <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                                    <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                                </svg>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-gray-900 mb-2">小さな成功体験の積み重ね</h4>
-                                <p class="text-sm text-gray-700">地方全体の活性化への貢献</p>
+                    <button onclick="openModal('success-modal')" class="bg-white border-2 border-accent-200 rounded-xl p-6 hover:shadow-lg transition-all cursor-pointer group w-full text-left" data-aos="fade-up" data-aos-delay="600">
+                        <div class="flex items-start justify-between">
+                            <div class="flex items-start">
+                                <div class="bg-accent-100 rounded-full p-3 mr-4 flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-accent-600">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                                        <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                                        <line x1="15" y1="9" x2="15.01" y2="9"></line>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-2">小さな成功体験の積み重ね</h4>
+                                    <p class="text-sm text-gray-700 mb-2">地方全体の活性化への貢献</p>
+                                    <p class="text-xs text-accent-600 group-hover:underline">クリックして詳細を見る →</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </button>
                 </div>
             </div>
         </div>
@@ -1079,7 +1197,7 @@
             <div class="max-w-4xl mx-auto">
                 <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 md:p-12 mb-12" data-aos="zoom-in">
                     <p class="text-xl text-center mb-8 leading-relaxed">
-                        活動内容や最新情報については、公式ウェブサイトをご覧ください。<br>
+                        これまでの活動内容については、公式ウェブサイトをご覧ください。<br>
                         組織への参画、ボランティア、視察・取材等のご相談も承っております。
                     </p>
 
@@ -1227,7 +1345,7 @@
                 <ul class="space-y-2 text-gray-700 mb-6">
                     <li class="flex items-start">
                         <span class="text-primary-600 mr-2">•</span>
-                        <span>地域住民として活動に参加</span>
+                        <span>地域住民と一緒になって活動に参加</span>
                     </li>
                     <li class="flex items-start">
                         <span class="text-primary-600 mr-2">•</span>
@@ -1331,6 +1449,487 @@
                     <p class="text-sm text-gray-800">
                         <strong>お問い合わせ：</strong><br>
                         詳細は<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>からお問い合わせください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：農村RMOモデル -->
+    <div id="rmo-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-primary-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('rmo-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">農村RMOモデルの確立</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">他地域への横展開を見据えたモデル構築</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    下塚田地区における農村RMO(地域運営組織)の取り組みを、他地域でも応用できるモデルとして確立します。農業振興、地域資源活用、生活支援の3つの分野で得られた成果やノウハウを体系化し、持続可能な地域づくりの手法として発信していきます。
+                </p>
+                <div class="bg-primary-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed">
+                        <!-- ここに追加の説明文を入れることができます -->
+                        私たちの取り組みが、他の地域でも参考となるよう、ノウハウの蓄積と情報発信を行っています。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：新たな収益事業の創出 -->
+    <div id="revenue-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-accent-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('revenue-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">新たな収益事業の創出</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">地域資源を活用した持続可能な事業展開</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    <!-- ここに後ほど詳細な説明文を追加します -->
+                    地域の特産品や観光資源、人材などを活かした新たな収益事業を創出し、持続可能な地域経営を目指します。
+                </p>
+                <div class="bg-accent-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed">
+                        地域経済の活性化と雇用創出につながる取り組みを推進します。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：スマート農業技術の導入 -->
+    <div id="smart-agriculture-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-primary-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('smart-agriculture-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">スマート農業技術の導入</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">生産性向上と作業効率化の推進</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    <!-- ここに後ほど詳細な説明文を追加します -->
+                    ICTやドローン、自動運転農機などの最新技術を活用し、農業の生産性向上と省力化を推進します。
+                </p>
+                <div class="bg-primary-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed">
+                        高齢化が進む農業現場において、スマート農業技術の導入は持続可能な農業を実現する鍵となります。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：新たな担い手の確保と育成 -->
+    <div id="successors-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-accent-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('successors-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">新たな担い手の確保と育成</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">若者・女性・移住者などの参画促進</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    <!-- ここに後ほど詳細な説明文を追加します -->
+                    地域の未来を担う若者や女性、移住者など、多様な人材の参画を促進し、次世代のリーダーを育成します。
+                </p>
+                <div class="bg-accent-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed">
+                        研修プログラムの提供や起業支援など、新たな担い手が活躍できる環境づくりに取り組みます。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：地域の魅力発信 -->
+    <div id="promotion-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-primary-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('promotion-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">地域の魅力発信</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">関係人口の創出と交流の深化</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    <!-- ここに後ほど詳細な説明文を追加します -->
+                    SNSやウェブサイト、イベントなどを通じて地域の魅力を発信し、関係人口の創出と交流の深化を図ります。
+                </p>
+                <div class="bg-primary-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed">
+                        地域に関わる人々のネットワークを広げ、持続可能な地域づくりにつなげます。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：小さな成功体験の積み重ね -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-accent-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('success-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">小さな成功体験の積み重ね</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">地方全体の活性化への貢献</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    <!-- ここに後ほど詳細な説明文を追加します -->
+                    小さな成功体験を積み重ね、それを可視化・共有することで、地域の自信と誇りを育み、地方全体の活性化に貢献します。
+                </p>
+                <div class="bg-accent-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed">
+                        一つひとつの成果を大切にし、次の挑戦へのモチベーションにつなげます。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：田んぼのこいのぼり -->
+    <div id="koinobori-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-primary-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('koinobori-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">田んぼのこいのぼり</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">地域の風物詩</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    <!-- ここに後ほど詳細な説明文を追加します -->
+                    毎年春、下塚田の田んぼに色鮮やかなこいのぼりが泳ぎます。田園風景と青空に映えるこいのぼりは、地域の風物詩として親しまれています。
+                </p>
+                <div class="bg-primary-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed">
+                        地域コミュニティの絆を深め、訪れる人々に癒しと感動を与える、下塚田ならではの魅力的な景観です。多くの家族連れや写真愛好家が訪れ、春の風物詩として定着しています。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：マイヤーレモン -->
+    <div id="lemon-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-yellow-500 text-gray-900 p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('lemon-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">マイヤーレモン</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">下塚田の特産品</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    <!-- ここに後ほど詳細な説明文を追加します -->
+                    下塚田地区の特産品であるマイヤーレモン。当組織では長期（約6ヶ月間）の貯蔵試験を実施し、品質保持と通年供給の可能性を探っています。
+                </p>
+                <div class="bg-yellow-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed">
+                        日南レモンとして東京などでの販売促進活動も展開し、地域資源の価値創造に取り組んでいます。マイヤーレモンは通常のレモンよりも甘みがあり、皮まで食べられるのが特徴です。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>や<a href="https://nichinanlemon.jp/" target="_blank" class="text-primary-600 hover:underline">日南レモン公式サイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：若い世代 -->
+    <div id="young-generation-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-primary-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('young-generation-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">若い世代の参画</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">次世代を担う若者たちの活躍</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    <!-- ここに後ほど詳細な説明文を追加します -->
+                    地域の未来を担う若い世代が、新しい視点とアイデアで地域づくりに参画しています。
+                </p>
+                <div class="bg-primary-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed">
+                        従来の地域活動では参画が難しかった若い世代も、柔軟な活動スタイルと多様な関わり方により、自分らしく地域に貢献しています。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：女性 -->
+    <div id="women-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-accent-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('women-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">女性の参画</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">女性の視点で地域を活性化</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    <!-- ここに後ほど詳細な説明文を追加します -->
+                    女性ならではの視点と感性を活かした地域づくりを推進しています。
+                </p>
+                <div class="bg-accent-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed">
+                        婦人会などの既存組織に加え、子育て世代や働く女性など、多様な立場の女性が活躍できる環境を整えています。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：UIターン者 -->
+    <div id="ui-turn-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-primary-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('ui-turn-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">UIターン者の参画</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">移住者と共に創る地域の未来</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    <!-- ここに後ほど詳細な説明文を追加します -->
+                    都市部から移住してきたUIターン者が、外部の視点と経験を活かして地域活性化に貢献しています。
+                </p>
+                <div class="bg-primary-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed">
+                        地域に新しい風を吹き込むUIターン者を積極的に受け入れ、地域住民と協働する環境づくりを進めています。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：外国人 -->
+    <div id="foreign-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-accent-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('foreign-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">外国人の参画</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">多文化共生の地域づくり</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    <!-- ここに後ほど詳細な説明文を追加します -->
+                    外国人住民も地域の大切な担い手として、多文化共生の地域づくりに参画しています。
+                </p>
+                <div class="bg-accent-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed">
+                        言語や文化の違いを超えて、お互いを尊重し合いながら協働する環境を整備しています。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：高齢者 -->
+    <div id="elderly-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-primary-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('elderly-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">高齢者の参画</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">経験と知恵を活かした地域貢献</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    <!-- ここに後ほど詳細な説明文を追加します -->
+                    長年培ってきた経験と知恵を持つ高齢者が、地域の貴重な担い手として活躍しています。
+                </p>
+                <div class="bg-primary-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed">
+                        老人会などの既存組織と連携しながら、高齢者が無理なく参画できる多様な活動の場を提供しています。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：チャレンジド -->
+    <div id="challenged-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-accent-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('challenged-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">チャレンジド（障がい者）の参画</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">誰もが活躍できる地域社会へ</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    障がいのある方々も地域の大切な担い手として、それぞれの個性や能力を活かして地域づくりに参画しています。
+                </p>
+                <div class="bg-accent-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed">
+                        バリアフリーな環境づくりと、一人ひとりに合わせた支援体制により、誰もが自分らしく活躍できる共生社会の実現を目指しています。多様な人々が互いに支え合い、それぞれの強みを活かすことで、より豊かな地域コミュニティを創造します。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：共感（Compassion） -->
+    <div id="compassion-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-primary-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('compassion-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">共感 (Compassion)</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">共に感じること</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    「ゆめゆたかのさと」の実現に向けて、まず大切にしているのが共感です。地域に暮らす人々の想い、訪れる人々の感動、子どもたちの夢を共に感じ合うことで、みんなが主役となる地域づくりが始まります。
+                </p>
+                <div class="bg-primary-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed mb-3">
+                        共感は、地域づくりの原点です。一人ひとりの声に耳を傾け、喜びも悲しみも分かち合うことで、真の絆が生まれます。
+                    </p>
+                    <p class="text-gray-800 leading-relaxed">
+                        この共感の輪が広がることで、地域全体が温かなコミュニティへと育っていきます。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：共生（Cohabitation） -->
+    <div id="cohabitation-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-accent-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('cohabitation-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">共生 (Cohabitation)</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">共に生きること</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    下塚田に関わる全ての人々が、互いの個性や役割を尊重し合いながら、共に豊かに生きる地域を目指します。農業、暮らし、文化を通じて人と自然が調和し、世代を超えてつながり合う「ゆめゆたかのさと」を育んでいきます。
+                </p>
+                <div class="bg-accent-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed mb-3">
+                        共生は、多様性を認め合う心から始まります。年齢、性別、国籍、障がいの有無を問わず、すべての人が自分らしく輝ける環境づくりを進めています。
+                    </p>
+                    <p class="text-gray-800 leading-relaxed">
+                        人と人、人と自然が調和し、互いに支え合う関係性が、持続可能な地域社会の基盤となります。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル：共同（Collaboration） -->
+    <div id="collaboration-modal" class="modal">
+        <div class="modal-content">
+            <div class="bg-primary-600 text-white p-6 rounded-t-2xl">
+                <span class="modal-close" onclick="closeModal('collaboration-modal')">&times;</span>
+                <h3 class="text-2xl font-bold">共同 (Collaboration)</h3>
+            </div>
+            <div class="p-8">
+                <h4 class="font-bold text-gray-900 mb-3 text-lg">共に活動すること</h4>
+                <p class="text-gray-700 mb-4 leading-relaxed">
+                    共感し、共に生きる想いを、具体的な行動へとつなげます。農業振興、地域資源の活用、生活支援など、様々な分野で地域住民が主体となって協力し合い、一つひとつの活動を積み重ねることで、持続可能な地域づくりを実現します。
+                </p>
+                <div class="bg-primary-50 p-6 rounded-lg mb-6">
+                    <p class="text-gray-800 leading-relaxed mb-3">
+                        共同は、「共感」と「共生」の理念を実践に移す原動力です。一人ひとりができることを持ち寄り、力を合わせることで、個人では成し得ない大きな成果を生み出します。
+                    </p>
+                    <p class="text-gray-800 leading-relaxed">
+                        協働の取り組みを通じて、地域の絆が深まり、新たな可能性が開かれていきます。
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <p class="text-sm text-gray-800">
+                        <strong>詳細情報：</strong><br>
+                        詳しくは<a href="https://shst.site/" target="_blank" class="text-primary-600 hover:underline">公式ウェブサイト</a>をご覧ください。
                     </p>
                 </div>
             </div>
